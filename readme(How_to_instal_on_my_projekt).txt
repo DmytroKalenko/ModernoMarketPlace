@@ -1,0 +1,1 @@
+Before start, You gotta copi this files to folder with you projeckt. And open comand and write "npi i".
