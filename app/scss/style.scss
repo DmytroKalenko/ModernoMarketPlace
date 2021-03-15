@@ -79,3 +79,57 @@ header {
     }
   }
 }
+
+.search {
+  height: 553px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  & .search__title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  & .search__text {
+    font-size: 20px;
+  }
+  form {
+    position: relative;
+    input {
+      height: 56px;
+      width: 670px;
+      padding: 0px 60px 0px 25px;
+      font-size: 14px;
+      color: rgb(144, 164, 174);
+      border-radius: 4px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.459);
+      &::placeholder {
+        color: #90a4ae;
+      }
+    }
+    .search__btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 25px;
+        width: 20px;
+        background-image: url(../images/search.svg);
+        background-size: cover;
+        
+    }
+  }
+
+  .search__inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .search__title {
+      margin: 157px 0px 35px;
+    }
+    .search__text {
+      margin-bottom: 57px;
+    }
+  }
+}
