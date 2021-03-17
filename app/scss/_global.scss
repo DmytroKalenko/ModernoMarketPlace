@@ -1,10 +1,13 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 a {
-  display: inline-block;
+    display: inline-block;
+    text-decoration: none;
 }
-*{
+
+* {
     outline: none;
     padding: 0;
     margin: 0;
@@ -12,21 +15,32 @@ a {
 
 ul,
 li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
 }
 
-input{
+input {
     border: none;
     padding: 0;
     margin: 0;
     cursor: pointer;
+}
+
+.container__fluid {
+    padding: 120px 30px 0;
+    background-color: $grey;
+}
+
+hr {
+    background-color: rgb(231, 236, 242);
+    height: 1px;
+    border: none;
 }
