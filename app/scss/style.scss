@@ -137,13 +137,6 @@ header {
 //start poducts section
 .products {
     font-family: "RobotoCondensed";
-    .products__tittle {
-        color: $colorText;
-        font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 30px;
-        text-align: center;
-    }
     .products__inner-btn,
     .products__btn {
         margin-bottom: 60px;
@@ -155,6 +148,7 @@ header {
             border: none;
             background-color: white;
             cursor: pointer;
+            box-shadow: 0px 1px 3px 0px rgba(206, 215, 227, 0.75);
             &+button {
                 margin-left: 5px;
             }
@@ -176,6 +170,14 @@ header {
             max-width: 442px;
             width: 100%;
             margin-bottom: 30px;
+            background-color: white;
+            border: 1px solid rgb(226, 226, 226);
+            &:hover {
+                box-shadow: 0px 16px 20px 0px rgba(215, 215, 215, 0.75);
+            }
+            .lightning {
+                position: absolute;
+            }
             .product__item__img {
                 min-height: 250px;
                 width: 100%;
@@ -232,10 +234,13 @@ header {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        .stars {
-                            width: 68px;
-                            height: 12px;
-                            margin-right: 20px;
+                        .rate__star {
+                            padding: 0;
+                            margin-right: 12px;
+                        }
+                        span {
+                            color: $colorText;
+                            font-size: 12px;
                         }
                     }
                 }
@@ -245,5 +250,136 @@ header {
     .products__btn {
         padding: 70px 0 113px;
         margin: 0;
+    }
+}
+
+.products__tittle,
+.slider__tittle {
+    color: $colorText;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+//finish poducts section
+//start Slider section
+.products__slider {
+    .container__fluid {
+        background-color: white;
+        .slider__tittle {
+            margin-bottom: 57px;
+        }
+    }
+    .slider {
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-track {
+            display: flex;
+            justify-content: space-between;
+        }
+        .slick-slide {
+            max-width: 442px;
+            width: 100%;
+            background-color: white;
+            border: 1px solid rgb(226, 226, 226);
+            &:hover {
+                box-shadow: 0px 16px 20px 0px rgba(215, 215, 215, 0.75);
+            }
+            .lightning {
+                position: absolute;
+            }
+            .product__item__img {
+                min-height: 250px;
+                width: 100%;
+            }
+            .product__item__container {
+                background-color: white;
+                box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+                padding: 30px 30px 18px;
+                .product__item__content {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .product__item__name {
+                        .product__item__tittle {
+                            font-size: 18px;
+                            color: $colorText;
+                            display: block;
+                            margin-bottom: 10px;
+                        }
+                        .product__item__categoty {
+                            display: block;
+                            font-size: 14px;
+                            color: rgb(139, 195, 74);
+                        }
+                    }
+                    .product__item__price {
+                        font-size: 20px;
+                        color: $colorText;
+                        font-weight: bold;
+                    }
+                }
+                .product__item__info {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 18px;
+                    align-items: center;
+                    .product__item__author {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .avatar {
+                            height: 30px;
+                            width: 30px;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            margin-right: 15px;
+                        }
+                        .author__name {
+                            color: $colorText;
+                        }
+                    }
+                    .product__item__opinions {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .rate__star {
+                            padding: 0;
+                            margin-right: 12px;
+                        }
+                        span {
+                            color: $colorText;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            padding: 65px 0 121px;
+            left: 50%;
+            li {
+                &+li {
+                    margin-left: 11px;
+                }
+                display: inline-block;
+                font-size: 0;
+                border-radius: 50%;
+                background-color: rgb(231, 231, 231);
+                width: 22px;
+                height: 22px;
+                button {
+                    display: none;
+                }
+                &.slick-active {
+                    background-color: $btnColor2;
+                }
+            }
+        }
     }
 }

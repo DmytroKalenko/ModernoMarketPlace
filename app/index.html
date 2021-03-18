@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MainPage</title>
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -69,8 +70,10 @@
             </div>
         </div>
     </section>
-    <section class="products">
 
+
+    <!-- ____Start___section___PRODUCTS_____ -->
+    <section class="products">
         <div class="container__fluid">
             <div class="products__tittle">Let’s Check Out Our Newest Release Prodcuts</div>
             <div class="products__inner">
@@ -101,14 +104,13 @@
                                 <a href="!#" class="author__name">Radiustheme</a>
                             </div>
                             <div class="product__item__opinions">
-                                <div class="stars" style="background-image: url(./images/stars.png);"></div>
-                                (05)
+                                <div class="rate__star"></div><span>(3.6)</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="product__item mix category-wordpress category-news" data-order="2">
+                    <img class="lightning" src="./images/lightning.png" alt="">
                     <a href="!#" class="product__item__img" style="background-image: url(./images/Produkt_item_BG.jpg);"></a>
                     <div class="product__item__container">
                         <div class="product__item__content">
@@ -125,8 +127,7 @@
                                 <a href="!#" class="author__name">Radiustheme</a>
                             </div>
                             <div class="product__item__opinions">
-                                <div class="stars" style="background-image: url(./images/stars.png);"></div>
-                                (05)
+                                <div class="rate__star"></div><span>(3.6)</span>
                             </div>
                         </div>
                     </div>
@@ -149,14 +150,14 @@
                                 <a href="!#" class="author__name">Radiustheme</a>
                             </div>
                             <div class="product__item__opinions">
-                                <div class="stars" style="background-image: url(./images/stars.png);"></div>
-                                (05)
+                                <div class="rate__star"></div><span>(3.6)</span>
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="product__item mix category-wordpress category-popular category-news" data-order="4">
+                    <img class="lightning" src="./images/lightning.png" alt="">
                     <a href="!#" class="product__item__img" style="background-image: url(./images/Produkt_item_BG.jpg);"></a>
                     <div class="product__item__container">
                         <div class="product__item__content">
@@ -173,8 +174,7 @@
                                 <a href="!#" class="author__name">Radiustheme</a>
                             </div>
                             <div class="product__item__opinions">
-                                <div class="stars" style="background-image: url(./images/stars.png);"></div>
-                                (05)
+                                <div class="rate__star"></div><span>(3.6)</span>
                             </div>
                         </div>
                     </div>
@@ -197,14 +197,14 @@
                                 <a href="!#" class="author__name">Radiustheme</a>
                             </div>
                             <div class="product__item__opinions">
-                                <div class="stars" style="background-image: url(./images/stars.png);"></div>
-                                (05)
+                                <div class="rate__star"></div><span>(3.6)</span>
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="product__item mix category-wordpress" data-order="6">
+                    <img class="lightning" src="./images/lightning.png" alt="">
                     <a href="!#" class="product__item__img" style="background-image: url(./images/Produkt_item_BG.jpg);"></a>
                     <div class="product__item__container">
                         <div class="product__item__content">
@@ -221,14 +221,14 @@
                                 <a href="!#" class="author__name">Radiustheme</a>
                             </div>
                             <div class="product__item__opinions">
-                                <div class="stars" style="background-image: url(./images/stars.png);"></div>
-                                (05)
+                                <div class="rate__star"></div><span>(3.6)</span>
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="product__item mix category-components category-popular" data-order="7">
+                    <img class="lightning" src="./images/lightning.png" alt="">
                     <a href="!#" class="product__item__img" style="background-image: url(./images/Produkt_item_BG.jpg);"></a>
                     <div class="product__item__container">
                         <div class="product__item__content">
@@ -245,8 +245,7 @@
                                 <a href="!#" class="author__name">Radiustheme</a>
                             </div>
                             <div class="product__item__opinions">
-                                <div class="stars" style="background-image: url(./images/stars.png);"></div>
-                                (05)
+                                <div class="rate__star"></div><span>(3.6)</span>
                             </div>
                         </div>
                     </div>
@@ -269,8 +268,7 @@
                                 <a href="!#" class="author__name">Radiustheme</a>
                             </div>
                             <div class="product__item__opinions">
-                                <div class="stars" style="background-image: url(./images/stars.png);"></div>
-                                (05)
+                                <div class="rate__star"></div><span>(3.6)</span>
                             </div>
                         </div>
                     </div>
@@ -283,9 +281,379 @@
                 <button type="button" data-filter=".category-popular">Popular Items</button>
             </div>
         </div>
-
     </section>
+    <!-- ____Finish___section___PRODUCTS_____ -->
+
+
+    <!-- ____Start___section___SLIDER_____ -->
+    <section class="products__slider">
+        <div class="container__fluid">
+            <div class="slider__tittle">This Week Trending Products</div>
+            <div class="slider">
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/1.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img class="lightning" src="./images/lightning.png" alt="">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/2.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/3.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/4.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img class="lightning" src="./images/lightning.png" alt="">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/1.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/2.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/3.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img class="lightning" src="./images/lightning.png" alt="">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/4.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/1.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img class="lightning" src="./images/lightning.png" alt="">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/2.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/3.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/4.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img class="lightning" src="./images/lightning.png" alt="">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/1.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/2.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img class="lightning" src="./images/lightning.png" alt="">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/3.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <a href="!#" class="product__item__img" style="background-image: url(./images/slider/4.jpg);"></a>
+                    <div class="product__item__container">
+                        <div class="product__item__content">
+                            <div class="product__item__name">
+                                <a href="!#" class="product__item__tittle">Responsive Mobile APP</a>
+                                <a href="!#" class="product__item__categoty">Site Template</a>
+                            </div>
+                            <div class="product__item__price">$19</div>
+                        </div>
+                        <hr>
+                        <div class="product__item__info">
+                            <div class="product__item__author">
+                                <a class="avatar" href="" style="background-image: url(./images/avatar.png);"></a>
+                                <a href="!#" class="author__name">Radiustheme</a>
+                            </div>
+                            <div class="product__item__opinions">
+                                <div class="rate__star"></div><span>(3.6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ____Finish___section___SLIDER_____ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
