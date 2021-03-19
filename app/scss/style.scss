@@ -61,7 +61,7 @@ header {
         }
     }
     & .header__menu {
-        background-color: #263238;
+        background-color: $bgColorDark;
         height: 60px;
         .menu {
             height: 100%;
@@ -389,7 +389,7 @@ header {
 //finish Slider section
 //start advantages section
 .advantages {
-    background-color: #2e353a;
+    background-color: $bgColorDark;
     .bloks {
         display: flex;
         justify-content: space-around;
@@ -484,8 +484,9 @@ header {
         .blok__item {
             background-color: #f8f8f8;
             margin-bottom: 120px;
+            max-width: 370px;
+            width: 100%;
             .blok__img {
-                min-width: 370px;
                 min-height: 270px;
                 display: block;
             }
@@ -502,3 +503,16 @@ header {
 }
 
 //finish tutorials section
+//----------Start____footer--------
+.footer {
+    background-color: $bgColorDark;
+    color: #ffff;
+    a {
+        color: #ffff;
+    }
+    .footer__content {
+        display: flex;
+    }
+}
+
+//----------Finish_____footer------
