@@ -512,6 +512,84 @@ header {
     }
     .footer__content {
         display: flex;
+        padding: 97px 0 117px;
+        justify-content: space-between;
+        .footer__colum:first-child {
+            max-width: 270px;
+        }
+        .footer__colum:last-child {
+            max-width: 267px;
+        }
+        .footer__colum__title {
+            font-size: 22px;
+        }
+        hr {
+            margin: 28px 0 32px;
+            background-color: $btnColor2;
+            height: 3px;
+            width: 51px;
+        }
+        .text {
+            font-size: 15px;
+            color: rgb(185, 194, 198);
+            line-height: 1.6;
+            padding-bottom: 33px;
+        }
+        .adress {
+            font-size: 14px;
+            padding-bottom: 26px;
+            padding-left: 31px;
+        }
+        .phone {
+            padding-left: 31px;
+        }
+        .footer__list {
+            .list__item {
+                padding: 0px 0px 10px 20px;
+            }
+        }
+        .footer__social__media {
+            padding-bottom: 42px;
+            .list__item {
+                display: inline-block;
+                padding-right: 7px;
+            }
+        }
+        .footer__form__title {
+            font-size: 20px;
+            padding-bottom: 22px;
+        }
+        form {
+            width: 267px;
+            height: 46px;
+            position: relative;
+            input {
+                background-color: rgb(54, 63, 69);
+                width: 94%;
+                height: 100%;
+                padding-left: 17px;
+                color: #6c7277;
+            }
+            button {
+                background-color: rgb(156, 194, 85);
+                position: absolute;
+                width: 43px;
+                height: 100%;
+                border: none;
+                background-image: url(../images/icons/cursor.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    .footer__right {
+        font-size: 15px;
+        color: rgb(145, 149, 151);
+        padding: 25px 0 30px;
+        text-align: center;
     }
 }
 
