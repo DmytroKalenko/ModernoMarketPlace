@@ -591,6 +591,20 @@ header {
         padding: 25px 0 30px;
         text-align: center;
     }
+    .footer__list {
+        .list__item {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 6px;
+                height: 11px;
+                background-image: url(../images/icons/direction.png);
+            }
+        }
+    }
 }
 
 //----------Finish_____footer------
