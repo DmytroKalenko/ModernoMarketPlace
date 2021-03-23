@@ -27,68 +27,91 @@
                             </p>
                         </div>
                         <div class="header__btn">
-                            <ul class="header__circle">
-                                <li><input type="button" value="" class="header__bell circle__item" style="background-image: url(./images/icons/bell.png);"></li>
-                                <li><input type="button" value="" class="header__letter circle__item" style="background-image: url(./images/icons/letter.png);"></li>
-                                <li><input type="button" value="" class="header__basket circle__item" style="background-image: url(./images/icons/basket.png);"></li>
-                                <li><input type="button" value="" class="avatar circle__item" style="background-image: url(./images/icons/avatar.png);"></li>
-                            </ul>
+                            <div class="header__btn__inner">
+                                <div class="bell">
+                                    <a href="#" class="header__bell circle__item" style="background-image: url(./images/icons/bell.png);">
+                                        <span>5</span>
+                                    </a>
+                                </div>
+
+                                <div class="letter">
+                                    <a href="#" class="header__letter circle__item" style="background-image: url(./images/icons/letter.png);">
+                                        <span>2</span>
+                                    </a>
+                                </div>
+
+                                <div class="basket">
+                                    <a href="#" class="header__basket circle__item" style="background-image: url(./images/icons/basket.png);">
+                                        <span>8</span>
+                                    </a>
+                                    <ul class="basket__list">
+                                        <!-- <input class="close" type="button" value="x"> -->
+                                        <li class="list__item__product list__item">
+                                            <div class="img__item" style="background-image: url(./images/icons/basket__logo_produkt.jpg);"></div>
+                                            <div class="item__content">
+                                                <div class="item__title">Apple Device</div>
+                                                <div class="heading">WordPress</div>
+                                                <div class="price">59$</div>
+                                            </div>
+                                        </li>
+                                        <li class="list__item__total list__item">
+                                            <div class="item__content">
+                                                <div class="text">Total</div>
+                                                <div class="total__price">$118</div>
+                                            </div>
+                                            <div class="item__buttons">
+                                                <input type="button" value="Go to Cart" class="GotoCart">
+                                                <input type="button" value="Go to Checkout" class="GotoCheckout">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+
                             <div class="user">
-                                <div class="user__name">Mike Hussy</div>
-                                <div class="user__saldo">$171.00</div>
+                                <a href="#" class="avatar circle__item" style="background-image: url(./images/icons/avatar.png);"></a>
+                                <div class="user__content">
+                                    <div class="user__name">Mike Hussy</div>
+                                    <div class="user__saldo">$171.00</div>
+                                </div>
+
+                                <ul class="user__list">
+                                    <li class="list__item">
+                                        <a href="#">Profile Page</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#">Portfolio</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#">Account Setting</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#">Downloads</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#">Wishlist</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#">Upload Item</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#">Statement</a>
+                                    </li>
+                                    <li class="list__item">
+                                        <a href="#">Withdraws</a>
+                                    </li>
+                                </ul>
                             </div>
                             <input type="button" value="Login" class="login">
                             <input type="button" value="Logout" class="logout">
                         </div>
                     </div>
                 </div>
-                <ul class="user__list">
-                    <li class="list__item">
-                        <a href="#">Profile Page</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#">Account Setting</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#">Downloads</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#">Wishlist</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#">Upload Item</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#">Statement</a>
-                    </li>
-                    <li class="list__item">
-                        <a href="#">Withdraws</a>
-                    </li>
-                </ul>
-                <ul class="basket__list">
-                    <input class="close" type="button" value="x">
-                    <li class="list__item__product list__item">
-                        <div class="img__item" style="background-image: url(./images/icons/basket__logo_produkt.jpg);"></div>
-                        <div class="item__content">
-                            <div class="item__title">Apple Device</div>
-                            <div class="heading">WordPress</div>
-                            <div class="price">59$</div>
-                        </div>
-                    </li>
-                    <li class="list__item__total list__item">
-                        <div class="item__content">
-                            <div class="text">Total</div>
-                            <div class="total__price">$118</div>
-                        </div>
-                        <div class="item__buttons">
-                            <input type="button" value="Go to Cart" class="GotoCart">
-                            <input type="button" value="Go to Checkout" class="GotoCheckout">
-                        </div>
-                    </li>
-                </ul>
+
+
             </div>
         </div>
         <div class="header__menu">
