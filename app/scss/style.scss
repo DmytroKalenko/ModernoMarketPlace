@@ -156,25 +156,160 @@ header {
                         .bell {
                             padding-bottom: 26px;
                             margin-top: 27px;
-                            a span {
-                                background-color: #fcb322;
+                            a {
+                                background-image: url(../images/icons/bell.svg);
+                                span {
+                                    background-color: #fcb322;
+                                }
+                            }
+                            &:hover {
+                                a {
+                                    background-image: url(../images/icons/bell_hover.svg);
+                                }
+                                .bell__list {
+                                    display: block;
+                                    transition: all 3s;
+                                }
+                            }
+                            .bell__list {
+                                display: none;
+                                border: 0.833px solid rgb(204, 204, 204);
+                                background-color: rgb(255, 255, 255);
+                                position: absolute;
+                                width: 268px;
+                                z-index: 2;
+                                right: 21%;
+                                top: 90px;
+                                transition: all 3s;
+                                .list__item {
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding: 20px;
+                                    border: 0.833px solid rgb(204, 204, 204);
+                                    position: relative;
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        right: 40px;
+                                        background-image: url(../images/icons/bell.svg);
+                                        height: 24px;
+                                        width: 24px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    }
+                                    .item__content {
+                                        padding-left: 15px;
+                                        .name {
+                                            font-size: 12px;
+                                            color: rgb(46, 53, 58);
+                                            color: $btnColor2;
+                                            padding: 10px 0;
+                                        }
+                                        .date {
+                                            font-size: 10px;
+                                            color: rgb(112, 112, 112);
+                                        }
+                                    }
+                                    .img__avatar {
+                                        height: 49px;
+                                        width: 49px;
+                                        background-size: cover;
+                                        background-position: center;
+                                        border-radius: 50%;
+                                        background-color: $btnColor2;
+                                    }
+                                }
                             }
                         }
                         .letter {
                             padding-bottom: 26px;
                             margin-top: 27px;
-                            a span {
-                                background-color: #ef6c00;
+                            a {
+                                background-image: url(../images/icons/envelope.svg);
+                                span {
+                                    background-color: #ef6c00;
+                                }
+                            }
+                            &:hover {
+                                a {
+                                    background-image: url(../images/icons/envelope_hover.svg);
+                                }
+                                .letter__list {
+                                    display: block;
+                                }
+                            }
+                            .letter__list {
+                                display: none;
+                                border: 0.833px solid rgb(204, 204, 204);
+                                background-color: rgb(255, 255, 255);
+                                position: absolute;
+                                width: 268px;
+                                z-index: 2;
+                                right: 21%;
+                                top: 90px;
+                                .list__item {
+                                    display: flex;
+                                    flex-direction: row;
+                                    padding: 20px;
+                                    border: 0.833px solid rgb(204, 204, 204);
+                                    position: relative;
+                                    &::after {
+                                        content: '';
+                                        position: absolute;
+                                        right: 40px;
+                                        background-image: url(../images/icons/envelope.svg);
+                                        height: 24px;
+                                        width: 24px;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        background-position: center;
+                                        background-repeat: no-repeat;
+                                    }
+                                    .item__content {
+                                        padding-left: 15px;
+                                        .name {
+                                            font-size: 12px;
+                                            color: rgb(46, 53, 58);
+                                        }
+                                        .about {
+                                            font-size: 11px;
+                                            color: $btnColor2;
+                                            padding: 10px 0;
+                                        }
+                                        .date {
+                                            font-size: 10px;
+                                            color: rgb(112, 112, 112);
+                                        }
+                                    }
+                                    .img__avatar {
+                                        height: 49px;
+                                        width: 49px;
+                                        background-size: cover;
+                                        background-position: center;
+                                        border-radius: 50%;
+                                        background-color: $btnColor2;
+                                    }
+                                }
                             }
                         }
                         .basket {
                             padding-bottom: 26px;
                             margin-top: 27px;
-                            a span {
-                                background-color: #95c85a;
+                            a {
+                                background-image: url(../images/icons/basket.svg);
+                                span {
+                                    background-color: #95c85a;
+                                }
                             }
-                            &:hover .basket__list {
-                                display: block;
+                            &:hover {
+                                a {
+                                    background-image: url(../images/icons/basket_hover.svg);
+                                }
+                                .basket__list {
+                                    display: block;
+                                }
                             }
                             .basket__list {
                                 display: none;
