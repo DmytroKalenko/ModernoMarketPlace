@@ -103,12 +103,18 @@ header {
                         }
                     }
                     .login {
-                        display: none;
+                        display: block;
                         background-color: $btnColor2;
+                        &:hover {
+                            color: black;
+                        }
                     }
                     .logout {
                         margin-left: 28px;
                         background-color: $btnColor;
+                        &:hover {
+                            color: black;
+                        }
                     }
                     .user {
                         position: relative;
@@ -297,6 +303,7 @@ header {
                         .basket {
                             padding-bottom: 26px;
                             margin-top: 27px;
+                            position: relative;
                             a {
                                 background-image: url(../images/icons/basket.svg);
                                 span {
@@ -319,7 +326,7 @@ header {
                                 width: 268px;
                                 z-index: 2;
                                 right: 21%;
-                                top: 90px;
+                                top: 63px;
                                 .close {
                                     position: absolute;
                                     right: 0;

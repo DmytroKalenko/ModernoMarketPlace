@@ -25,7 +25,7 @@ $(function() {
 
     // //__Start_Header_User__menu__
 
-    // $('.header__bell, .header__letter, .avatar, .user').hide();
+    $('.bell, .letter, .user').hide();
     // //___Start____LOGin_in__site__
 
     // $('.login').on('click', function() {

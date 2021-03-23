@@ -21,6 +21,8 @@ gulp.task('style', function() { ///add CSS files our option counten __slick_slid
     return gulp.src([
             'node_modules/normalize.css/normalize.css',
             'node_modules/slick-carousel/slick/slick.css', // here write route to our .js files
+            'node_modules/slick-carousel/slick/slick.css',
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
 
             ///here you can add new rout to you option counten
         ])
@@ -33,7 +35,7 @@ gulp.task('script', function() { ///add JS files our option counten __slick_slid
     return gulp.src([
             'node_modules/slick-carousel/slick/slick.js', // here write route to our .js files
             'node_modules/mixitup/dist/mixitup.js', ///here you can add new rout to you option counten
-
+            'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         ])
         .pipe(concat('libs.min.js')) // concatynation  both files to 1
         .pipe(uglify()) // minimization file
