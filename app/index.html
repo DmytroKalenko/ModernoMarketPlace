@@ -154,7 +154,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <input type="button" value="Login" class="login">
+                            <a class="login" data-fancybox data-src="#modal" href="javascript:;">Login</a>
                             <input type="button" value="Logout" class="logout">
                         </div>
                     </div>
@@ -933,6 +933,30 @@
         </div>
     </footer>
     <!-- ____Finish___footer_____ -->
+
+
+
+    <!-- ____Start___login___POPuP_____ -->
+    <div id="modal">
+        <div class="modal__container">
+            <div class="modal__title">login</div>
+            <form>
+                <div class="name">
+                    <input type="text" name="" id="" placeholder="Name" required>
+                </div>
+                <div class="password">
+                    <input type="password" name="" id="" placeholder="Password" required>
+                </div>
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <a href="#">Creat An Account?</a>
+                </div>
+                <a href="#">Lost Password?</a>
+            </form>
+        </div>
+    </div>
+    <!-- ____Finish___login___POPuP____ -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/jquery.rateyo.min.js"></script>
     <script src="js/libs.min.js"></script>
