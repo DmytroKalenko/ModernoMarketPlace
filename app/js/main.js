@@ -1,7 +1,4 @@
 $(function() {
-    var mixer = mixitup('.products__inner__mixitUP');
-
-
     //Start____Slick_________Slider
     $('.slider').slick({
         infinite: true,
@@ -24,47 +21,51 @@ $(function() {
     //__Finish_RATEYO___
 
     // //__Start_Header_User__menu__
-
     $('.bell, .letter, .user').hide();
-    // //___Start____LOGin_in__site__
-
-    // $('.login').on('click', function() {
-    //     $('.header__bell, .header__letter, .avatar, .user').show();
-    //     $('.login').hide();
-    //     $('.header__circle li').addClass('curent');
-    // });
-
-
-    // $('.logout').on('click', function() {
-    //     $('.header__bell, .header__letter, .avatar, .user').hide();
-    //     $('.login').show();
-    //     $('.header__circle li').removeClass('curent');
-    // });
-    // //___Finish____LOGOUT_in__site__
-
-
-    // //__start____Header_User__menu__
-    // $('.user').on('click', function() {
-    //     $('.user').toggleClass("curent");
-    //     $('.user__list').slideToggle();
-    // });
-    // $('.user__list .list__item a').on('click', function() {
-    //     $('.user').toggleClass("curent");
-    //     $('.user__list').slideToggle();
-    // });
-    // $('.logout').on('click', function() {
-    //     $('.user__list, .basket__list').slideUp();
-    // });
-    // //__Finish____Header_User__menu__
-
-
-    // //__start____header__basket__
-    // $('.header__basket, .basket__list .close').on('click', function() {
-    //     $('.basket__list').slideToggle();
-
-    // });
-
     // //__finish____header__basket__
 
 
+
+    // START_Tabs__
+
+
+    $('.tab1').on('click', function() {
+        $('.tab__content1').show();
+        $('.tab1').addClass('current');
+
+        $('.tab__content2, .tab__content3, .tab__content4').removeClass('current');
+        $('.tab2, .tab3, .tab4').removeClass('current');
+
+    });
+    $('.tab2').on('click', function() {
+        $('.tab__content2').addClass('current');
+        $('.tab2').addClass('current');
+
+        $('.tab__content3, .tab__content4 ').removeClass('current');
+        $('.tab__content1').hide();
+        $('.tab1, .tab3, .tab4').removeClass('current');
+    });
+
+    $('.tab3').on('click', function() {
+        $('.tab__content3').addClass('current');
+        $('.tab3').addClass('current');
+
+        $('.tab__content2, .tab__content4 ').removeClass('current');
+        $('.tab__content1').hide();
+        $('.tab2, .tab1, .tab4').removeClass('current');
+    });
+
+    $('.tab4').on('click', function() {
+        $('.tab__content4').addClass('current');
+        $('.tab4').addClass('current');
+
+        $('.tab__content3, .tab__content2 ').removeClass('current');
+        $('.tab__content1').hide();
+        $('.tab2, .tab3, .tab1').removeClass('current');
+    });
+
+
+    //__finish_____Tabs__
+
+    var mixer = mixitup('.products__inner__mixitUP');
 });
