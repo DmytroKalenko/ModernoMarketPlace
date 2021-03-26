@@ -1133,6 +1133,11 @@ header {
     }
     .container__inner {
         display: flex;
+        //page__profile
+        &.page__profile {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
         .content {
             max-width: 870px;
             .blok__image {
@@ -1488,3 +1493,37 @@ header {
 }
 
 //finish__________product--page
+//start__________profile--page
+.page__product {
+    .container {
+        .container__inner {
+            .content {
+                .information_about_author {
+                    display: flex;
+                    flex-direction: row;
+                    height: 79px;
+                    border: 0.833px solid #d6d6d6;
+                    margin: 30px 0;
+                    .information__item {
+                        &+.information__item {
+                            border-left: 0.833px solid #d6d6d6;
+                        }
+                        width: 25%;
+                        cursor: pointer;
+                        color: #75828b;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        .item__title {
+                            color: black;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//finish__________profile--page
