@@ -108,6 +108,7 @@ header {
                         padding: 8px 20px;
                         color: white;
                         border-radius: 4px;
+                        transition: all .5s;
                         &:hover {
                             color: black;
                         }
@@ -115,6 +116,7 @@ header {
                     .logout {
                         margin-left: 28px;
                         background-color: $btnColor;
+                        transition: all .5s;
                         &:hover {
                             color: black;
                         }
@@ -683,19 +685,6 @@ header {
                         }
                         .author__name {
                             color: $colorText;
-                        }
-                    }
-                    .product__item__opinions {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        .rate__star {
-                            padding: 0;
-                            margin-right: 12px;
-                        }
-                        span {
-                            color: $colorText;
-                            font-size: 12px;
                         }
                     }
                 }
@@ -1518,6 +1507,162 @@ header {
                         .item__title {
                             color: black;
                             margin-bottom: 10px;
+                        }
+                    }
+                }
+                .about__author {
+                    padding: 40px;
+                    border: 0.833px solid #d6d6d6;
+                    background-color: #fff;
+                    margin-bottom: 115px;
+                    .title {
+                        font-size: 20px;
+                        color: rgb(38, 50, 56);
+                        font-weight: bold;
+                        padding-bottom: 25px;
+                    }
+                    .about {
+                        margin-bottom: 50px;
+                        font-size: 15px;
+                        color: rgb(112, 112, 112);
+                        line-height: 1.6;
+                    }
+                    .skillbar {
+                        .skillbar__item {
+                            margin-bottom: 23px;
+                            .skillbar__text {
+                                display: flex;
+                                justify-content: space-between;
+                                flex-direction: row;
+                                margin-bottom: 15px;
+                            }
+                            .skillbar__bar {
+                                position: relative;
+                                width: 100%;
+                                height: 15px;
+                                border-radius: 4px;
+                            }
+                            .skillbar__progres {
+                                position: absolute;
+                                height: 100%;
+                                border-radius: 4px;
+                                background-size: contain;
+                            }
+                        }
+                    }
+                }
+            }
+            .sidebar {
+                .product__links {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    .buttons {
+                        display: flex;
+                        flex-direction: column;
+                        a {
+                            color: white;
+                            padding: 20px 0;
+                            text-align: center;
+                            font-size: 16px;
+                            transition: all .5s;
+                            &:first-child {
+                                background-color: #546e7a;
+                                position: relative;
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 55px;
+                                    height: 15px;
+                                    width: 18px;
+                                    background-image: url(../images/icons/letter.svg);
+                                    background-position: center;
+                                    background-size: cover;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                            &:last-child {
+                                margin-top: 15px;
+                                background-color: $btnColor2;
+                            }
+                            &:hover {
+                                color: black;
+                            }
+                        }
+                    }
+                    .social__media {
+                        margin: 25px 0;
+                        a {
+                            height: 38px;
+                            width: 38px;
+                            margin-right: 5px;
+                            img {
+                                height: 38px;
+                                width: 38px;
+                            }
+                        }
+                    }
+                }
+                .about__me {
+                    border: 0.833px solid #d6d6d6;
+                    background-color: #fff;
+                    margin-top: 30px;
+                    a {
+                        color: rgb(112, 112, 112);
+                        padding: 15px 0;
+                        padding-left: 50px;
+                        width: 100%;
+                        &:hover {
+                            color: black;
+                        }
+                    }
+                    .title {
+                        color: black;
+                        border-bottom: 2px solid $btnColor2;
+                        padding: 15px 0;
+                        padding-left: 50px;
+                    }
+                    li {
+                        position: relative;
+                        &+li {
+                            border-top: 0.833px solid #d6d6d6;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 22px;
+                            height: 15px;
+                            width: 19px;
+                            background-image: url(../images/icons/person.svg);
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        &:nth-child(2) {
+                            &::before {
+                                background-image: url(../images/icons/suitcase.svg);
+                            }
+                        }
+                        &:nth-child(3) {
+                            &::before {
+                                background-image: url(../images/icons/letter_Grej.svg);
+                            }
+                        }
+                        &:nth-child(4) {
+                            &::before {
+                                height: 16px;
+                                background-image: url(../images/icons/message.svg);
+                            }
+                        }
+                        &:nth-child(5) {
+                            &::before {
+                                height: 20px;
+                                background-image: url(../images/icons/peoples.svg);
+                            }
                         }
                     }
                 }

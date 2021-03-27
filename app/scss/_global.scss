@@ -45,3 +45,17 @@ hr {
     height: 1px;
     border: none;
 }
+
+.product__item__opinions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .rate__star {
+        padding: 0;
+        margin-right: 12px;
+    }
+    span {
+        color: $colorText;
+        font-size: 12px;
+    }
+}

@@ -67,5 +67,15 @@ $(function() {
 
     //__finish_____Tabs__
 
+
+    //_____start_____skillbar___
+    $('.skillbar__item').each(function() {
+        let skill_percent = $(this).attr('data-percent');
+        $(this).find('.skillbar__progres').width(skill_percent);
+        $(this).find('.skillbar__percent').html(skill_percent);
+    });
+    //_____finish___skillbar___
+
+
     var mixer = mixitup('.products__inner__mixitUP');
 });
