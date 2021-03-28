@@ -76,6 +76,48 @@ $(function() {
     });
     //_____finish___skillbar___
 
+    //_____start_____bar_on__Setting--page__
+    $('ul .personal__info').on('click', function() {
+        $('.personal__info__content').addClass('current');
+        $(this).addClass('current');
 
+        $('.profile__content, .badges__content, .e-mail__content, .social__content').removeClass('current');
+        $('.profile, .badges, .e-mail, .social ').removeClass('current');
+    });
+
+
+    $('ul .profile').on('click', function() {
+        $('.profile__content').addClass('current');
+        $(this).addClass('current');
+
+        $('.personal__info__content, .badges__content, .e-mail__content, .social__content').removeClass('current');
+        $('ul .personal__info, .badges, .e-mail, .social ').removeClass('current');
+    });
+
+    $('ul .badges').on('click', function() {
+        $('.badges__content').addClass('current');
+        $(this).addClass('current');
+
+        $('.personal__info__content, .profile__content, .e-mail__content, .social__content').removeClass('current');
+        $('ul .personal__info, .profile, .e-mail, .social ').removeClass('current');
+    });
+
+    $('ul .e-mail').on('click', function() {
+        $('.e-mail__content').addClass('current');
+        $(this).addClass('current');
+
+        $('.personal__info__content, .profile__content, .badges__content, .social__content').removeClass('current');
+        $('ul .personal__info, .profile, .badges, .social ').removeClass('current');
+    });
+
+    $('ul .social').on('click', function() {
+        $('.social__content').addClass('current');
+        $(this).addClass('current');
+
+        $('.personal__info__content, .profile__content, .badges__content, .e-mail__content').removeClass('current');
+        $('ul .personal__info, .profile, .badges, .e-mail').removeClass('current');
+    });
+
+    //_____finish_____bar_on__Setting--page__
     var mixer = mixitup('.products__inner__mixitUP');
 });
