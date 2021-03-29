@@ -693,7 +693,8 @@ header {
         .slick-dots {
             display: flex;
             justify-content: center;
-            padding: 65px 0 121px;
+            cursor: pointer;
+            margin: 65px 0 121px;
             left: 50%;
             li {
                 &+li {
@@ -1100,6 +1101,7 @@ header {
 }
 
 .page__product {
+    background-color: #f4f6f5;
     .nav {
         padding: 45px 0;
         li {
@@ -1200,12 +1202,13 @@ header {
                     margin-top: 50px;
                 }
                 .more__products__wrapper {
-                    background-color: rgb(255, 255, 255);
+                    background-color: #f4f6f5;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-between;
                     margin-bottom: 128px;
                     .list__item {
+                        background-color: rgb(255, 255, 255);
                         border: 0.833px solid rgb(214, 214, 214);
                         width: 268px;
                         box-sizing: border-box;
@@ -1494,6 +1497,7 @@ header {
                     border: 0.833px solid #d6d6d6;
                     margin: 30px 0;
                     .information__item {
+                        background-color: white;
                         &+.information__item {
                             border-left: 0.833px solid #d6d6d6;
                         }
@@ -1674,9 +1678,12 @@ header {
 //finish__________profile--page
 //start__________settings--page
 .settings {
+    background-color: #f4f6f5;
+    padding-bottom: 150px;
     .sidebar__settings {
         margin-right: 30px;
         max-width: 270px;
+        max-height: 253px;
         width: 100%;
         border: 0.833px solid #d6d6d6;
         background-color: #fff;
@@ -1724,27 +1731,56 @@ header {
     }
     .content {
         width: 100%;
-        div {
+        div[data="content__info"] {
             display: none;
             &.current {
                 display: block;
             }
         }
-        .personal__info__content {
-            background-color: #76ae36;
-            border: 2px solid black
-        }
-        .profile__content {
-            background-color: #c94d3f;
-        }
-        .badges__content {
-            background-color: #e7ab04;
-        }
-        .e-mail__content {
-            background-color: red;
-        }
-        .social__content {
-            background-color: blue;
+        .container__inner__info {
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            border: 0.833px solid #d6d6d6;
+            .container__title {
+                font-size: 24px;
+                color: rgb(38, 50, 56);
+                border-bottom: 0.833px solid #d6d6d6;
+                padding: 20px 35px;
+            }
+            .container__form {
+                display: flex;
+                padding: 30px 40px;
+                flex-direction: column;
+                input,
+                select {
+                    border-width: 0.833px;
+                    border-color: rgb(215, 215, 215);
+                    border-style: solid;
+                    background-color: rgb(249, 249, 249);
+                    max-width: 540px;
+                    width: 100%;
+                    height: 40px;
+                    // &+input {
+                    //     margin-top: 20px;
+                    // }
+                }
+                .form {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    .tittle {
+                        max-width: 255px;
+                        width: 100%;
+                    }
+                    button {
+                        background-color: #8bc34a;
+                        padding: 20px 25px;
+                        color: white;
+                    }
+                }
+            }
         }
     }
 }

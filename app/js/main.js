@@ -119,5 +119,19 @@ $(function() {
     });
 
     //_____finish_____bar_on__Setting--page__
-    var mixer = mixitup('.products__inner__mixitUP');
+
+
+
+
+
+
+    var mixer = mixitup('.products__inner__mixitUP', {
+        animation: {
+            effects: 'fade translateZ(-100px)'
+        },
+    });
+
+
+
+
 });
