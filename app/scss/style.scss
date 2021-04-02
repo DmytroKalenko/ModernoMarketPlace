@@ -401,16 +401,22 @@ header {
   }
   & .header__menu {
     background-color: $bgColorDark;
-    height: 60px;
+
     .menu {
       height: 100%;
       display: flex;
       align-items: center;
       .menu__list li {
         display: inline-block;
-        margin-right: 38px;
+
         a {
           color: white;
+          padding: 15px 20px;
+          &:hover {
+            background-color: $btnColor2;
+            transition: all 0.5s;
+            color: black;
+          }
         }
       }
     }
@@ -457,11 +463,15 @@ header {
       transform: translateY(-50%);
       height: 25px;
       width: 25px;
-      background-image: url(../images/search.png);
+      background-image: url(../images/icons/search.svg);
       background-size: cover;
       border: none;
       background-color: transparent;
       cursor: pointer;
+      &:hover {
+        background-image: url(../images/icons/searchGreen.svg);
+        transition: all 0.5s;
+      }
     }
   }
   .search__inner {
@@ -503,6 +513,7 @@ header {
       &:hover {
         background-color: $btnColor;
         color: white;
+        transition: all 0.5s;
       }
     }
   }
@@ -618,6 +629,9 @@ header {
     }
   }
   .slider {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
     .slick-list {
       overflow: hidden;
     }
@@ -697,6 +711,7 @@ header {
       cursor: pointer;
       margin: 65px 0 121px;
       left: 50%;
+      padding-bottom: 25px;
       li {
         & + li {
           margin-left: 11px;
@@ -714,6 +729,28 @@ header {
           background-color: $btnColor2;
         }
       }
+    }
+    .slick-arrow {
+      position: absolute;
+      top: 37%;
+      transform: translateY(-50%);
+      z-index: 2;
+      font-size: 0;
+      height: 40px;
+     width: 22px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: transparent;
+    }
+    .slick-next {
+      right: -2%;
+      background-image: url(../images/slider/arrowNext.svg);
+     
+      
+    }
+    .slick-prev {
+      left: -2%;
+      background-image: url(../images/slider/arrowPrev.svg);
     }
   }
 }

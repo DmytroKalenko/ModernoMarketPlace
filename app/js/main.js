@@ -4,9 +4,12 @@ $(function() {
         infinite: true,
         dots: true,
         slidesToShow: 4,
-        slidesToScroll: 4,
-        speed: 1600,
-        arrows: false,
+        slidesToScroll: 1,
+        speed: 800,
+        draggable: false,
+        waitForAnimate: false,
+      
+        
     });
 
     //Finish____Slick_________Slider
