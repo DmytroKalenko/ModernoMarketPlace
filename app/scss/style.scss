@@ -1948,14 +1948,14 @@ header {
         padding: 20px 35px;
       }
       .container__content {
-        padding: 0  35px 45px;
+        padding: 0 35px 45px;
         .content__item {
           .item__title {
             font-size: 20px;
             color: rgb(68, 68, 68);
             margin: 40px 0 20px;
-            
-          }line-height: 1.5;
+          }
+          line-height: 1.5;
           font-size: 15px;
           color: rgb(112, 112, 112);
         }
@@ -1964,3 +1964,42 @@ header {
   }
 }
 //______finish______page__aboutUS_____
+
+//______start______page__404_____
+.page__product.error {
+  .container__inner {
+    background-color: #ffffff;
+    border: 0.833px solid #d6d6d6;
+    flex-direction: column;
+    .container__title {
+      font-size: 24px;
+      color: #263238;
+      border-bottom: 0.833px solid #d6d6d6;
+      padding: 20px 35px;
+    }
+    .img404 {
+      height: 700px;
+      border-bottom: 0.833px solid #d6d6d6;
+
+      background-size: cover;
+      position: relative;
+      a {
+        position: absolute;
+        border: 2px solid white;
+        color: white;
+        border-radius: 4px;
+        padding: 20px 30px;
+        text-transform: uppercase;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        &:hover {
+          color: black;
+          border: 2px solid black;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}
+//______finish______page__404_____
