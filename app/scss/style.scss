@@ -737,16 +737,14 @@ header {
       z-index: 2;
       font-size: 0;
       height: 40px;
-     width: 22px;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-color: transparent;
+      width: 22px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: transparent;
     }
     .slick-next {
       right: -2%;
       background-image: url(../images/slider/arrowNext.svg);
-     
-      
     }
     .slick-prev {
       left: -2%;
@@ -779,8 +777,18 @@ header {
         background-position: center;
         background-repeat: no-repeat;
       }
+      &:nth-child(1) .item__img {
+        background-image: url(../images/icons/heart.svg);
+      }
+      &:nth-child(2) .item__img {
+        background-image: url(../images/icons/gift.svg);
+      }
+      &:nth-child(3) .item__img {
+        background-image: url(../images/icons/lock.svg);
+      }
+
       &:hover {
-        .item__img {
+        .item__img:first-child {
           background-color: $btnColor2;
         }
         .item__tittle {
@@ -796,6 +804,21 @@ header {
       .item__tittle {
         padding: 30px 0;
         font-size: 24px;
+      }
+    }
+    .bloks__item:first-child:hover {
+      .item__img {
+        background-image: url(../images/icons/heartWhite.svg);
+      }
+    }
+    .bloks__item:nth-child(2):hover {
+      .item__img {
+        background-image: url(../images/icons/giftWhite.svg);
+      }
+    }
+    .bloks__item:last-child:hover {
+      .item__img {
+        background-image: url(../images/icons/lockWhite.svg);
       }
     }
   }
