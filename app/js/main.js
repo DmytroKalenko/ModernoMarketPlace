@@ -8,8 +8,8 @@ $(function() {
         speed: 800,
         draggable: false,
         waitForAnimate: false,
-      
-        
+
+
     });
 
     //Finish____Slick_________Slider
@@ -25,6 +25,13 @@ $(function() {
 
     // //__Start_Header_User__menu__
     $('.bell, .letter, .user').hide();
+    $('.logout').on('click', function() {
+        $('.bell, .letter, .user').hide();
+    });
+
+    $('.login').on('click', function() {
+        $('.bell, .letter, .user').show();
+    });
     // //__finish____header__basket__
 
 
