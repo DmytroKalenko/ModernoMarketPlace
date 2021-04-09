@@ -8,14 +8,36 @@ $(function() {
         speed: 800,
         draggable: false,
         waitForAnimate: false,
+        responsive: [{
+                breakpoint: 2045,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1548,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 568,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
 
-
+                }
+            },
+        ]
     });
 
     //Finish____Slick_________Slider
 
     //__Start_RATEYO___
-
+    $('.logout').hide();
     $(".rate__star").rateYo({
         rating: 3.6,
         starWidth: "12px",
@@ -26,11 +48,11 @@ $(function() {
     // //__Start_Header_User__menu__
     $('.bell, .letter, .user').hide();
     $('.logout').on('click', function() {
-        $('.bell, .letter, .user').hide();
+        $('.bell, .letter, .user, this').hide();
     });
 
     $('.login').on('click', function() {
-        $('.bell, .letter, .user').show();
+        $('.bell, .letter, .user, .logout').show();
     });
     // //__finish____header__basket__
 
