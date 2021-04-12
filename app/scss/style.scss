@@ -487,29 +487,6 @@
                 }
             }
             
-            @media screen and (max-width: 801px) {
-                .search {
-                    form {
-                        input {
-                            width: 600px;
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 697px) {
-                .search {
-                    form {
-                        input {
-                            width: 450px;
-                        }
-                    }
-                    .search__title {
-                        font-size: 42px;
-                    }
-                }
-            }
-            
             //start poducts section
             .products {
                 font-family: "RobotoCondensed";
@@ -627,38 +604,6 @@
                         }
                     }
                 }
-                @media screen and (max-width: 1092px) {
-                    .products__inner__mixitUP {
-                        justify-content: center;
-                        .product__item {
-                            max-width: 342px;
-                            margin-right: 30px;
-                        }
-                    }
-                }
-                @media screen and (max-width: 962px) {
-                    .products__inner__mixitUP {
-                        justify-content: space-around;
-                        .product__item {
-                            max-width: 322px;
-                            margin-right: 0px;
-                        }
-                    }
-                }
-                @media screen and (max-width: 762px) {
-                    .products__inner__mixitUP {
-                        .product__item {
-                            max-width: 300px;
-                        }
-                    }
-                }
-                @media screen and (max-width: 657px) {
-                    .products__inner__mixitUP {
-                        .product__item {
-                            max-width: 100%;
-                        }
-                    }
-                }
                 // @media screen and (max-width: 420px) {
                 //     .products__inner__mixitUP {
                 //         grid-template-columns: repeat(1, 1fr);
@@ -670,25 +615,6 @@
                 .products__btn {
                     padding: 70px 0 113px;
                     margin: 0;
-                }
-            }
-            
-            @media screen and (max-width: 769px) {
-                .products {
-                    .products__btn {
-                        padding: 0;
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 595px) {
-                .products {
-                    .products__inner-btn {
-                        margin-bottom: 15px;
-                    }
-                    button {
-                        margin-bottom: 10px;
-                    }
                 }
             }
             
@@ -838,59 +764,6 @@
                 }
             }
             
-            @media screen and (max-width: 1090px) {
-                .products__slider {
-                    .slider {
-                        .slick-slide {
-                            max-width: 420px;
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 1003px) {
-                .products__slider {
-                    .slider {
-                        .slick-slide {
-                            max-width: 310px;
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 1590px) {
-                .products__slider {
-                    .slider {
-                        .slick-next {
-                            right: -3%;
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 769px) {
-                .products__slider {
-                    .slider {
-                        .slick-dots {
-                            margin: 40px 0;
-                        }
-                        .slick-slide {
-                            max-width: 270px;
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 769px) {
-                .products__slider {
-                    .slider {
-                        .slick-slide {
-                            max-width: 100%;
-                        }
-                    }
-                }
-            }
-            
             //finish Slider section
             //start advantages section
             .advantages {
@@ -961,19 +834,6 @@
                 }
             }
             
-            @media screen and (max-width: 760px) {
-                .advantages {
-                    .container {
-                        .bloks {
-                            flex-wrap: wrap;
-                            a {
-                                margin-top: 30px;
-                            }
-                        }
-                    }
-                }
-            }
-            
             .advantages__tittle {
                 color: white;
                 padding: 120px 0 85px;
@@ -1016,13 +876,6 @@
                 }
             }
             
-            @media screen and (max-width: 697px) {
-                .authors .container .blok {
-                    width: 92%;
-                    min-width: unset;
-                }
-            }
-            
             //finish authors section
             //start tutorials section
             .tutorials {
@@ -1058,42 +911,6 @@
                             box-shadow: 0px 16px 20px 0px rgba(0, 0, 0, 0.062);
                         }
                     }
-                }
-            }
-            
-            @media screen and (max-width: 1349px) {
-                .tutorials {
-                    .tutorials__bloks {
-                        .blok__item {
-                            margin-bottom: 30px;
-                            &:last-child {
-                                margin-bottom: 0;
-                            }
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 780px) {
-                .tutorials {
-                    .tutorials__bloks {
-                        .blok__item {
-                            max-width: 500px;
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 657px) {
-                .tutorials {
-                    .tutorials__bloks {
-                        .blok__item {
-                            max-width: 100%;
-                        }
-                    }
-                }
-                .header__text {
-                    display: none;
                 }
             }
             
@@ -1229,45 +1046,6 @@
                             width: 6px;
                             height: 11px;
                             background-image: url(../images/icons/direction.png);
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 760px) {
-                .footer {
-                    .footer__content {
-                        form {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-            
-            @media screen and (max-width: 1070px) {
-                .footer {
-                    .footer__content {
-                        .footer__colum {
-                            max-width: unset;
-                            width: 38%;
-                            &:first-child {
-                                order: 3;
-                                max-width: unset;
-                                width: 50%;
-                            }
-                            &:nth-child(2) {
-                                order: 1;
-                                margin-bottom: 40px;
-                            }
-                            &:nth-child(3) {
-                                order: 2;
-                                margin-bottom: 40px;
-                            }
-                            &:last-child {
-                                order: 4;
-                                max-width: unset;
-                                width: 38%;
-                            }
                         }
                     }
                 }
@@ -2316,3 +2094,228 @@
             }
             
             //______finish______page__404_____
+            @media screen and (max-width: 801px) {
+                .search {
+                    form {
+                        input {
+                            width: 600px;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 697px) {
+                .search {
+                    form {
+                        input {
+                            width: 450px;
+                        }
+                    }
+                    .search__title {
+                        font-size: 42px;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 1092px) {
+                .products__inner__mixitUP {
+                    justify-content: center;
+                    .product__item {
+                        max-width: 342px;
+                        margin-right: 30px;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 962px) {
+                .products__inner__mixitUP {
+                    justify-content: space-around;
+                    .product__item {
+                        max-width: 322px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 762px) {
+                .products__inner__mixitUP {
+                    .product__item {
+                        max-width: 300px;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 657px) {
+                .products__inner__mixitUP {
+                    .product__item {
+                        max-width: 100%;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 769px) {
+                .products {
+                    .products__btn {
+                        padding: 0;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 595px) {
+                .products {
+                    .products__inner-btn {
+                        margin-bottom: 15px;
+                    }
+                    button {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 1090px) {
+                .products__slider {
+                    .slider {
+                        .slick-slide {
+                            max-width: 420px;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 1003px) {
+                .products__slider {
+                    .slider {
+                        .slick-slide {
+                            max-width: 310px;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 1590px) {
+                .products__slider {
+                    .slider {
+                        .slick-next {
+                            right: -3%;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 769px) {
+                .products__slider {
+                    .slider {
+                        .slick-dots {
+                            margin: 40px 0;
+                        }
+                        .slick-slide {
+                            max-width: 270px;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 769px) {
+                .products__slider {
+                    .slider {
+                        .slick-slide {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 760px) {
+                .advantages {
+                    .container {
+                        .bloks {
+                            flex-wrap: wrap;
+                            a {
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 697px) {
+                .authors .container .blok {
+                    width: 92%;
+                    min-width: unset;
+                }
+            }
+            
+            @media screen and (max-width: 1349px) {
+                .tutorials {
+                    .tutorials__bloks {
+                        .blok__item {
+                            margin-bottom: 30px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 780px) {
+                .tutorials {
+                    .tutorials__bloks {
+                        .blok__item {
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 657px) {
+                .tutorials {
+                    .tutorials__bloks {
+                        .blok__item {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .header__text {
+                    display: none;
+                }
+            }
+            
+            @media screen and (max-width: 760px) {
+                .footer {
+                    .footer__content {
+                        form {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            
+            @media screen and (max-width: 1070px) {
+                .footer {
+                    .footer__content {
+                        .footer__colum {
+                            max-width: unset;
+                            width: 38%;
+                            &:first-child {
+                                order: 3;
+                                max-width: unset;
+                                width: 50%;
+                            }
+                            &:nth-child(2) {
+                                order: 1;
+                                margin-bottom: 40px;
+                            }
+                            &:nth-child(3) {
+                                order: 2;
+                                margin-bottom: 40px;
+                            }
+                            &:last-child {
+                                order: 4;
+                                max-width: unset;
+                                width: 38%;
+                            }
+                        }
+                    }
+                }
+            }
