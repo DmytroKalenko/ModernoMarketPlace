@@ -68,6 +68,12 @@ button {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .container__fluid {
+        padding: 15px 0;
+    }
+}
+
 hr {
     background-color: rgb(231, 236, 242);
     height: 1px;
