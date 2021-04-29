@@ -174,7 +174,10 @@ $(function() {
                 bloks2[i].classList.add("active");
 
             } else {
-                bloks2[i].classList.remove("active");
+                if (bloks2[i].classList.contains(".bloks__item")) {
+                    bloks2[i].classList.remove("active");
+                };
+
 
             }
         };
@@ -184,20 +187,48 @@ $(function() {
     }, 1000);
     window.addEventListener("scroll", scrollAnim);
 
-
-
-
     function offset(el) {
         const rect = el.getBoundingClientRect(),
             scrollTop = window.pageXOffset || document.documentElement.scrollTop,
             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
         return { top: rect.top + scrollTop, left: rect.left + screenLeft }
-    }
+    };
     //____finish_______animation___for__bloks____
 
     //____start_______animation___for__counter____
 
+    // function ToMove(num = 2000) {
+    //     const time = 4000;
+    //     const step = 1;
 
+    //     n = 0;
+    //     let t = Math.round(time / (num / step));
+    //     let interval = setInterval(() => {
+    //         n = n + step;
+    //         if (n == num) {
+    //             clearInterval(interval);
+    //         };
+    //         Counter.innerHTML = n;
+    //     }, t)
+    // };
+    // ToMove()
+
+    var number = document.querySelector('#counter'),
+        numberTop = number.getBoundingClientRect().top,
+        start = +number.innerHTML,
+        end = +number.dataset.max;
+
+    window.addEventListener('scroll', function onScroll() {
+        if (window.pageYOffset > numberTop - window.innerHeight / 2) {
+            this.removeEventListener('scroll', onScroll);
+            var interval = setInterval(function() {
+                number.innerHTML = ++start;
+                if (start == end) {
+                    clearInterval(interval);
+                }
+            }, 5);
+        }
+    });
 
 
 
