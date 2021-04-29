@@ -153,10 +153,60 @@ $(function() {
 
     //_____finish_____bar_on__Setting--page__
 
+    //____start_______animation___for__bloks____
+    const bloks = document.querySelectorAll(".bloks a");
+    const bloks2 = Array.from(bloks);
+    const Counter = document.querySelector(".blok__title span[id=counter]");
+
+
+    function scrollAnim() {
+        for (i = 0; i < bloks2.length; i++) {
+
+            const blokHeight = bloks2[i].offsetHeight;
+
+            const blokOffset = offset(bloks2[i]).top;
+
+            const animStart = 4;
+
+            let animationPoint = window.innerHeight - blokHeight / animStart;
+
+            if ((pageYOffset > blokOffset - animationPoint) && pageYOffset < (blokOffset + blokHeight)) {
+                bloks2[i].classList.add("active");
+
+            } else {
+                bloks2[i].classList.remove("active");
+
+            }
+        };
+    };
+    setTimeout(() => {
+        scrollAnim();
+    }, 1000);
+    window.addEventListener("scroll", scrollAnim);
 
 
 
 
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+            scrollTop = window.pageXOffset || document.documentElement.scrollTop,
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+        return { top: rect.top + scrollTop, left: rect.left + screenLeft }
+    }
+    //____finish_______animation___for__bloks____
+
+    //____start_______animation___for__counter____
+
+
+
+
+
+
+
+
+
+
+    //____finish_______animation___for__counter____
 
     var mixer = mixitup('.products__inner__mixitUP', {
         animation: {
